@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/media/images/favicon.png" type="image/x-icon">
+    <script src="assets/js/calculator.js"></script>
+
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+
+        <div id="contenedor-principal">
+
+            <div id="contenedor-formulario">
+                <h2>Indice de Masa Corporal</h2>
+
+                <div id="formulario-input">
+                    <div class="input-group">
+                        <label for="imcWeight">Peso</label>
+                        <input type="text" placeholder="Escribe en kg (ej. 70)" id="imcWeight">
+                    </div>
+                    <div class="input-group">
+                        <label for="imcHeight">Altura</label>
+                        <input type="text" placeholder="Escribe en metros (ej. 1.75)" id="imcHeight">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="CALCULAR" id="btnCalculate">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tabla de clasificación IMC -->
+            <div id="contenedor-tabla">
+                <h2>Tabla de clasificación IMC</h2>
+                <div>
+                    <p>Bajo peso</p>
+                    <p id="strIMC1"></p>
+                    <p>&lt 18</p>
+                </div>
+                <div>
+                    <p>Normal</p>
+                    <p id="strIMC2"></p>
+                    <p>18 - 24</p>
+                </div>
+                <div>
+                    <p>Sobrepeso</p>
+                    <p id="strIMC3"></p>
+                    <p>25 - 29</p>
+                </div>
+                <div>
+                    <p>Obesidad I</p>
+                    <p id="strIMC4"></p>
+                    <p>30 - 34</p>
+                </div>
+                <div>
+                    <p>Obesidad II</p>
+                    <p id="strIMC5"></p>
+                    <p>&gt 34</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Calculadora IMC por Manuel Corona Fernández. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

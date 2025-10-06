@@ -1,0 +1,256 @@
+:root {
+    --bg-principal: #ffffff;
+    --color-andalucia: #037932;
+    --bg-btn-hover: #00a743;
+    --sombra-principal: 4px 4px 5px #0000005b;
+    --sombra-card: 0px 4px 5px #0000005b;
+    --border-radius: 16px;
+    --border-principal: 1px solid black;
+}
+
+@font-face {
+    font-family: "Junta Andalucia";
+    src: url("../fonts/NotoSansHK-Medium.ttf");
+}
+
+
+/* 🟩Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Junta Andalucia;
+
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+
+    background-image: linear-gradient(#037932, #b8b8b8d8), url("../media/images/bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-size: 18px;  
+}
+
+
+/* 🟩Estilos contenedores */
+main > div, footer {
+    width: 35%;
+
+    text-align: center;
+    box-shadow: var(--sombra-principal);
+
+    margin: 0px auto;
+}
+
+main > div:first-child {
+    background-color: var(--bg-principal);
+    border-radius: 16px 16px 0px 0px;
+    margin-top: 4%;
+}
+
+main > div:last-child {
+    background-color: var(--color-andalucia);
+    padding: 10px 0;
+}
+
+#contenedor-tabla, #contenedor-formulario {
+    width: 80%;
+    background-color: var(--bg-principal);
+    border-radius: var(--border-radius);
+    box-shadow: var(--sombra-principal);
+    margin: 18px auto;
+    padding: 10px;
+}
+
+footer {
+    font-size: 10px;
+    background-color: var(--bg-principal);
+    border-radius: 0px 0px 16px 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* 🟩Estilos texto */
+h1, h2, h3 {
+    letter-spacing: 1px;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.432);   
+}
+
+h1 {
+    color: var(--color-andalucia);
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 20px
+}
+
+/* Unificado h2, h3 */
+h2, h3 {
+    color: var(--color-andalucia);
+    padding-left: 10px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+/* 🟩Estilos imagenes */
+img {
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* 🟩Estilos calculadora */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-input > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+label {
+    color: var(--color-andalucia);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"] {
+    width: 80%;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 15px 18px;
+}
+
+input[type="submit"] {
+    width: 80%;
+    height: auto;
+
+    color: white;
+    background-color: var(--color-andalucia);
+    box-shadow: var(--sombra-card);
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: var(--border-radius);
+
+    font-family: Junta Andalucia;
+    letter-spacing: 1px;
+
+    padding: 12px 0px;
+    margin: 10px;
+
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--bg-btn-hover);
+    transform: translateY(3px);
+    cursor: pointer;
+}
+
+
+#imcWeight::placeholder, #imcHeight::placeholder {
+    color: gray;
+}
+
+#imcWeight.error::placeholder, #imcHeight.error::placeholder {
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+
+#strIMC {
+    width: 80%;
+    min-height: 10px;
+
+    align-content: center;
+    justify-content: center;
+    
+    font-size: 18px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--sombra-card);
+
+    padding: 12px 0px;
+    margin: 5px;
+}
+
+
+/* 🟩Estilos tabla imc */
+#contenedor-tabla > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 10px;
+}
+
+#contenedor-tabla > div > p:first-child {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#contenedor-tabla > div > p:last-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#contenedor-tabla > div:nth-child(2) {
+    background-color: #22c55e;
+}
+
+#contenedor-tabla > div:nth-child(3) {
+    background-color: #84cc16;
+}
+
+#contenedor-tabla > div:nth-child(4) {
+    background-color: #eab308;
+}
+
+#contenedor-tabla > div:nth-child(5) {
+    background-color: #f97316;
+}
+
+#contenedor-tabla > div:nth-child(6) {
+    background-color: #ef4444;
+}
+
+
+
+/* Responsive para pantallas móviles */
+@media (max-width: 1100px) {
+    *, label {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    main > div, footer {
+        width: 90%;
+    }
+    #contenedor-principal > div {
+        width: 70%;
+        margin: 50px auto;
+    }
+    main {
+        margin-top: 250px;
+    }
+    footer > p {
+        font-size: 22px;
+    }
+}

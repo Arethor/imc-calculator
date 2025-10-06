@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#f8f9fa" height="462" id="svg_1" width="800" x="0" y="-11"/>
+  <text fill="#037932" font-size="24" font-weight="bold" id="svg_2" text-anchor="middle" x="400" y="30">Tabla de Clasificación IMC</text>
+  <rect fill="#22c55e" height="60" id="svg_3" rx="5" width="700" x="50" y="60"/>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_4" x="100" y="95">Bajo peso</text>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_5" x="650" y="95">&lt; 18.5</text>
+  <rect fill="#84cc16" height="60" id="svg_6" rx="5" width="700" x="50" y="130"/>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_7" x="100" y="165">Normal</text>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_8" x="650" y="165">18.5 - 24.9</text>
+  <rect fill="#eab308" height="60" id="svg_9" rx="5" width="700" x="50" y="200"/>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_10" x="100" y="235">Sobrepeso</text>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_11" x="650" y="235">25 - 29.9</text>
+  <rect fill="#f97316" height="60" id="svg_12" rx="5" width="700" x="50" y="270"/>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_13" x="100" y="305">Obesidad I</text>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_14" x="650" y="305">30 - 34.9</text>
+  <rect fill="#ef4444" height="60" id="svg_15" rx="5" transform="matrix(1 0 0 1 0 0)" width="700" x="51" y="340"/>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_16" transform="matrix(1 0 0 1 0 0)" x="100" y="375">Obesidad II</text>
+  <text fill="white" font-size="18" font-weight="bold" id="svg_17" x="650" y="375">&gt;= 35</text>
+ </g>
+</svg>
